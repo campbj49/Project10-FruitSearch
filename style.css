@@ -1,0 +1,68 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+:focus {
+ /* TODO */
+}
+
+body {
+  background-image: linear-gradient(to right , yellow, red);
+}
+
+input {
+  /*add padding so that it matches the suggestion list
+  give it the correct background color*/
+  padding: 5px;
+  background-color: rgb(255, 206, 116);
+}
+
+.search-container {
+  /* add gradient */
+  position:absolute;
+  top: 50%;
+  left: 50%;
+ 
+ /* center it to make it the most visible*/
+}
+.search-container input,
+.search-container .suggestions {
+  /* general text formatting */
+}
+.search-container input {
+ /* input specific formatting */
+}
+.search-container .suggestions {
+   /* remove last bit of whitespace between seach list and seach box */
+   
+  vertical-align:top
+}
+
+ul {
+  /* 
+  //real todo is to figure out how to format the list such that
+	//it attatches to the search box,  
+  visibility: hidden;*/
+  padding: 0;
+  vertical-align:top;
+  font-size: 0;
+}
+ul.has-suggestions {
+  /* make it visible only if there are suggestions */
+  visibility: visible;
+}
+ul li {
+  /*seperates the with lines, 
+	//and doesn't have bullets or indent*/
+  font-size: 12pt;
+  position: relative;
+  list-style-type: none;
+  background-color: rgb(255, 206, 116);
+  border: 1px solid black;
+  padding: 5px;
+}
+ul li:hover {
+  /* highlights on hover */
+  background-color: orange;
+  cursor: pointer;
+}
